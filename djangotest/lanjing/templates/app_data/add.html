@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增数据</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label>名称：</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label>位置：</label>
+            <input type="text" name="position">
+        </div>
+        <div>
+            <label> 时间：</label>
+            <input type="text" name="date">
+        </div>
+        <div>
+            <label>类型：</label>
+            <input type="text" name="types">
+        </div>
+        <a href="/" style="text-decoration:none">
+            <input type="button" value="取消">
+
+        </a>
+
+        <input type="submit" value="提交">
+
+    </form>
+</div>
+</body>
+</html>
